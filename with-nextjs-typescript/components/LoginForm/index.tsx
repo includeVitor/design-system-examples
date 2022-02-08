@@ -49,7 +49,7 @@ const LoginForm = () => {
   }, [fields]);
 
   useEffect(() => {
-    if (formStatus == FormStatus.COMPLETED)
+    if (formStatus === FormStatus.COMPLETED)
       toast.addToast({ message: "sucesso", type: "success" });
   }, [formStatus]);
 
@@ -74,7 +74,7 @@ const LoginForm = () => {
       <Button
         label="Entrar"
         width="400px"
-        loading={formStatus == FormStatus.SUBMITTING}
+        loading={formStatus === FormStatus.SUBMITTING}
       />
     </form>
   );
