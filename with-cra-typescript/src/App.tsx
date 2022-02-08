@@ -5,7 +5,6 @@ import { useAppTheme } from "./lib/theme";
 function App() {
   const theme = useAppTheme();
 
-  console.log(theme);
   return (
     <div className="container">
       <div className="main">
